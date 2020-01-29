@@ -1,0 +1,41 @@
+#table {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+:host /deep/ ng2-smart-table table{
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    border-width: 2px;
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12); 
+    height: 350px;
+    
+    display: table;
+    border-spacing: 2px;
+    border-color: grey; /* border of the big table*/
+
+}
+
+/* grid lines */
+:host /deep/ ng2-smart-table table > tbody > tr > td {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    color: black;
+}
+
+/* headers grid color*/
+:host /deep/ ng2-smart-table thead > tr > th  { 
+    border: 1px solid grey;
+    background-color:lightgrey;
+}  
+/*font size*/
+:host /deep/ ng2-smart-table {
+    font-size:16px;
+}
+
+
+
+

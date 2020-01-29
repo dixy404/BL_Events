@@ -1,0 +1,19 @@
+
+ 
+<div class="login-container">
+    <mat-card id="card">
+    <form [formGroup]="form" class="login-form">
+        <img src="/assets/img/logo3.png" alt="logo3" id="logo">
+        <h3 style="text-align: center">Dobro došao admin!</h3>
+        <mat-form-field>
+            <input matInput type="text" formControlName="username" required autocomplete="off"
+                placeholder="Korisničko ime" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" formControlName="password" required autocomplete="off"
+                placeholder="Lozinka" >
+        </mat-form-field>
+        <button mat-button [disabled]="form.invalid" (click)="login(form)" id="login-button">Prijavi se</button>
+    </form>
+</mat-card> 
+</div>

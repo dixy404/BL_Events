@@ -1,0 +1,67 @@
+
+    <div class="container" id="from-the-top">
+                   
+             <div class="col-lg-12">
+             
+                <button class="btn btn-dark btn-lg margin-left" (click)="todayEvents()"  >
+                  Današnji događaji</button>
+                  <button (click)="futureEvent()" class="btn btn-dark btn-lg margin-left ">Najava događaja</button>
+                  <br><br>
+             
+                  <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Slika</th>
+                            <th scope="col">Kategorija</th>
+                            <th scope="col">Naziv</th>
+                            <th scope="col">Opis</th>
+                            <th scope="col">Datum</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of data">
+                            <td><img [src]="item?.picture" width="200px"></td>
+                            <td>{{item?.category}}</td>
+                            <td>{{item?.name}}</td>
+                            <td>{{item?.comments}}</td>
+                            <td>{{item?.date | date:"M/d/yy, h:mm a "}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+            </div>
+            <br>
+             
+            <div class="row" id="bottom">
+                <div class="col-md-4 mb-5">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <p class="card-text" style="text-align: center"><app-weather-forecast></app-weather-forecast></p>
+                    </div>
+                    <div class="card-footer">
+                      <a href="https://rhmzrs.com/meteorologija/meteorolosko-bdenje/prognoza/meteoroloski-bilteni/" target="_blank" class="btn btn-dark btn-sm">Saznaj više</a>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-4 mb-5">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <a href="https://www.argeta.com/ba/vas-izbor/" target="_blank">
+                        <img src="/assets/img/ad2.png" alt="ad2" class="img-fluid"></a>
+                    </div>
+                    
+                  </div>
+                </div>
+                            
+          
+              </div>
+            
+          </div>
+
+         
+
+            
+           
+   

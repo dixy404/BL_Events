@@ -1,0 +1,36 @@
+.login-container {    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#card{
+    background-color: white;
+    color: black;
+    height: 450px;
+    border: black 5px;
+}
+
+#login-button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#logo{
+    width: 50%;
+    text-align: center;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+
+
