@@ -1,4 +1,19 @@
-# ProjektniZadatak
+# Description
+
+Second project for the course ITP100
+Frontend: Angular 8
+Backend: Local Storage
+
+# Login info
+
+Korisničko ime: user1
+Lozinka: pass1
+
+# Demo
+
+https://objective-meitner-16521b.netlify.com
+
+# Projektni Zadatak
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
