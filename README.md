@@ -1,12 +1,12 @@
 # Description
 
-Second project for the course ITP100
-Frontend: Angular 8
+Second project for the course ITP100 <br/>
+Frontend: Angular 8 <br/>
 Backend: Local Storage
 
 # Login info
 
-Korisničko ime: user1
+Korisničko ime: user1<br/>
 Lozinka: pass1
 
 # Demo
